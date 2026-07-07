@@ -9,7 +9,7 @@ import { GetChatRoomByUsersService } from '../services/GetChatRoomByUsersService
 import { GetMessagesByChatRoomService } from '../services/GetMessagesByChatRoomService';
 import { GetUserBySocketIdService } from '../services/GetUserBySocketIdService';
 
-io.on('connect', (socket) => {
+io.on('connection', (socket) => {
     // io.emit() send global information to all users
     // socket.emit() can send information to specific user
     // socket.emit() and socket.on() can be done from server or client side
